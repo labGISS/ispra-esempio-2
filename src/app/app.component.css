@@ -1,0 +1,13 @@
+.container {
+  padding: 20px;
+}
+
+/*.map {*/
+/*  width: 600px;*/
+/*  height: 600px;*/
+/*}*/
+
+.map {
+  width: 100vw;
+  height: 100vh;
+}

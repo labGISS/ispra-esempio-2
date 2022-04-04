@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">Integration Test</mat-toolbar>
+<div class="map" leaflet [leafletOptions]="leafletOptions"
+     (leafletMapReady)="onMapReady($event)">
+  <div *ngIf="bboxLayer" [leafletLayer]="bboxLayer"></div>
+  <div *ngIf="clcLayer" [leafletLayer]="clcLayer"></div>
+  <div *ngIf="incendiLayer" [leafletLayer]="incendiLayer"></div>
+</div>
