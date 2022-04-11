@@ -77,8 +77,10 @@ export class AppComponent implements OnInit {
     const keys = Object.keys(json);
 
     for (const key of keys) {
-      const s = `<b>${key}</b>: ${json[key]}</br>`;
-      ret = ret + s;
+      if (json[key]) {
+        const s = `<b>${key}</b>: ${json[key]}</br>`;
+        ret = ret + s;
+      }
     }
 
     return ret;
